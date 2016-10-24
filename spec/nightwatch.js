@@ -1,3 +1,5 @@
+const TRAVIS_JOB_NUMBER = process.env.TRAVIS_JOB_NUMBER;
+
 module.exports = {
   "src_folders" : ["spec/nightwatch/wtf.js"],
   "output_folder" : "spec/reports",
@@ -28,6 +30,11 @@ module.exports = {
         enabled: false,
         path: "",
       },
+      desiredCapabilities: {
+        browserName: "chrome",
+        build: `build-${TRAVIS_JOB_NUMBER}`,
+       "tunnel-identifier": TRAVIS_JOB_NUMBER,
+      }
       globals: {
         waitForConditionTimeout: 10000,
       }
