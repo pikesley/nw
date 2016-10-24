@@ -8,7 +8,7 @@ module.exports = {
   "page_objects_path" : "",
   "globals_path" : "",
 
-  "selenium" : {
+  /*"selenium" : {
     "start_process" : true,
     "server_path" : "./bin/selenium-server-standalone-3.0.1.jar",
     "log_path" : "spec/log",
@@ -16,7 +16,7 @@ module.exports = {
     "cli_args" : {
       "webdriver.chrome.driver" : "./bin/chromedriver"
     }
-  },
+  },*/
 
   "test_settings" : {
     "default" : {
