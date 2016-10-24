@@ -8,10 +8,10 @@ install:
 - npm install -g nightwatch
 - bundle
 before_script:
-- bundle exec rackup -p 9291
+- bundle exec rackup -p 9291 &
 script:
 - nightwatch --config spec/nightwatch.js
-- pkill node
+- pkill ruby
 env:
   global:
   - secure: WFT4VpnjZBC9i8FtDxd15wsNzRkSXwE2QDs76L1EFHyytILqN2kZm97k1Kn51O7vgm5b5mCAsl59y9HJ92VNksNUd5IdZhsJwZVyKF4ubBIg4YqBcBFY9Tcrr7GJeLHblApX7+mFzz+0gZ2/RmhuREiMv/qZu6mAnq2j2Gnksd0WsMEPEx0zJGDX4YMCja9gXo46SZoFim4c/AlYm6yL2s50dO0OrY0u9zaLhoV3QI1vsYu6OVRnsvDGl5q9sKhkhC2HsgoILn5j+kjZtj6OwOm4sYHLtuaJ350uTuuEQ/dpS/hT1glIq3LHns2V2OaYPSB5gtb6CL+m4UMcrZ0ya7lniXrwqzY9Cdfa8FbGseBKg4RjVhuk+Uvk5Oa2C66VCBt/Cm+SNKBFPfrIDpsVB375ji/OnO60BKHw1E3lhsgEf71arI0LbFbK9nsGUPLFzCgXrDnjG0kSBR1eZPW3p5GT3zjptJSHpHwXyGPxa4PnCKRkG1cH0FG2O8Auedx9tG7s4qeADEkrI+rbyZjUV0zciRiQ4dATaR1wQ73OlK1HAX8U1eaKTf+fwBviYuHGJhqYSgy+UWh18Y4dK6u8VRsGb3YW+0VlkypjtDyNx2xaSoKH8HG7+CqeclcLti55Bx7uUsuvnmDKrrwFW8qBXbY73RrI+Ren+z4THHdKPIM=
