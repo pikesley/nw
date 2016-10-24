@@ -1,0 +1,5 @@
+bin/
+node_modules/
+spec/log/
+spec/reports/
+.env
