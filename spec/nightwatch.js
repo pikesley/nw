@@ -34,7 +34,7 @@ module.exports = {
         browserName: "chrome",
         build: `build-${TRAVIS_JOB_NUMBER}`,
        "tunnel-identifier": TRAVIS_JOB_NUMBER,
-      }
+     },
       globals: {
         waitForConditionTimeout: 10000,
       }

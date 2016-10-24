@@ -1,7 +1,7 @@
 module.exports = {
   'My first test' : function (browser) {
     browser
-      .url('http://localhost:9291/')
+      .url('http://localhost:4567/')
       .waitForElementVisible('body', 1000)
       .assert.containsText('h1', 'Nightwatch')
       /*.click('button[id=vague-mode]')
